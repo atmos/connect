@@ -1380,8 +1380,8 @@ a method override, othewise defaults to __method_.</p>
 <h2>Examples</h2>
 
 <pre><code>connect.router(function(app){
-    app.get('/user/:id', function(req, res, params){
-        // populates params.id
+    app.get('/user/:id', function(req, res, next){
+        // populates req.params.id
     });
 })</code></pre>
 
